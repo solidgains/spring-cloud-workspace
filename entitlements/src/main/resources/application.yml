@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: entitlements
+
+applicationProperty: "from local"
+applicationDevProperty: "from local"
+entitlementsProperty: "from local"
+entitlementsDevProperty: "from local"
+
+---
+spring:
+  profiles: dev
+  application:
+    name: entitlements
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
